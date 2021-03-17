@@ -4,4 +4,4 @@ The goal is to get together and work on the same kata and then explain the solut
 
 The kata in the 'kataClub' folder were achieved in this context. 
 
-The kata in the 'kata' folder were done outside this context. 
+The kata in the 'kata' folder were achieved by myseld outside this context. 
