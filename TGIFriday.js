@@ -11,8 +11,9 @@ function lastDayIsFriday(initialYear, endYear) {
       if (endYear === undefined) {
         endYear = initialYear;
       }
-        
+      // we itirate over the years 
        for (let year = initialYear; year <= endYear; year++) {
+           //iterate over the months and return a friday if getDay = to friday 
         for (let month = 1; month <= 12; month++) {
           let d = new Date(year, month, 0);
           if (d.getDay() === 5) {
