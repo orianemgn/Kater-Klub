@@ -38,3 +38,14 @@ function FirstUniqueCharacter(s){
     const firstIndex = Object.values(compareObj).indexOf(1);
     return Object.keys(compareObj)[firstIndex]
   }
+
+  //solution florian 
+  function findFirstUniqueChar(str) {
+    let slice = []
+    for (let i = 0; i < str.length; i++) {
+      slice = str.slice(i + 1)
+      if (!slice.includes(str[i])) {
+        return str[i]
+      }
+    }
+  }
