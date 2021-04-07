@@ -6,3 +6,13 @@
 //The cat can jump over three characters. So:
 //C.....m returns 'Escaped!' <-- more than three characters between
 //C...m returns 'Caught!' <-- as there are three characters between the two, the cat can jump.
+
+function catMouse(x) {
+    return x.length <= 5 ? 'Caught!' : 'Escaped!';
+  }
+
+//or 
+
+  function catMouse(x){
+    return x.replace(/[A-Z]/gi, '').length > 3 ? 'Escaped!' : 'Caught!'
+   }
