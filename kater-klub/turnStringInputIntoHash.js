@@ -42,13 +42,13 @@ function strToHash(str){
 
 
 //Solution Simone 
-function strToHash(str) {
-    const result = new Object();
-    if (str) {
-      str.split(‘, ‘).forEach(pair => {
-        const keyValue = pair.split(‘=’);
-        return result[keyValue[0]] = Number(keyValue[1]);
-      });
-    }
-    return result;
-  }
+// function strToHash(str) {
+//     const result = new Object();
+//     if (str) {
+//       str.split(‘, ‘).forEach(pair => {
+//         const keyValue = pair.split(‘=’);
+//         return result[keyValue[0]] = Number(keyValue[1]);
+//       });
+//     }
+//     return result;
+//   }
