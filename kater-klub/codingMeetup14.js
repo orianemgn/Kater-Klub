@@ -1,7 +1,20 @@
 //Coding Meetup #14 - Higher-Order Functions Series - Order the food
 //https://www.codewars.com/kata/583952fbc23341c7180002fd/train/javascript
 
-
+//My solution 
+function orderFood(list) {
+    let count = [];
+    list.map(item => {
+      if(item.meal === "vegetarian") count.push("vegetarian")
+      else if (item.meal === "standard") count.push("standard")
+      else if (item.meal === "vegan") count.push("vegan")
+      else if (item.meal === "diabetic") count.push("diabetic")
+      else if (item.meal === "gluten-intolerant") count.push("gluten-intolerant")
+    })
+    const result = count.reduce((json,val)=>({...json,[val]:(json[val] |0) +1}), {});
+    return result
+  }
+  
 //Adam solution 
 // function orderFood(list) {
 //     let meal = {}
@@ -50,28 +63,3 @@ function orderFood(list) {
     return filteredMeals;
   }
 
-
-  //My solution (not working)
-  function orderFood(list) {
-    // thank you for checking out the Coding Meetup kata :)
-    let count = [];
-    list.map(item => {
-      if(item.meal === "vegetarian"){
-        count.push("vegetarian")
-      } else if (item.meal === "standard"){
-        count.push("standard")
-      } else if (item.meal === "vegan"){
-        count.push("vegan")
-      } else if (item.meal === "diabetic"){
-        count.push("diabetic")
-      } else if (item.meal === "gluten-intolerant"){
-        count.push("gluten-intolerant")
-      }
-    })
-    console.log(count)
-    let result = {};
-    for (let i=0; i<count.length; i++){
-      result[count[i]] ++
-    }
-    return result
-  }
