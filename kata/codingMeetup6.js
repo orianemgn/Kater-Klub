@@ -3,32 +3,9 @@
 
 
 function isSameLanguage(list) {
-    let arrayLanguage = []
-    list.forEach(participant =>{
-      console.log(participant.language)
-      arrayLanguage.push(participant.language)
-    })
-    console.log(arrayLanguage)
-    for(let i=0; i<arrayLanguage.length -1; i++){
-      if(arrayLanguage[i] == undefined || arrayLanguage[i] !== arrayLanguage[i+1]){
-        return false 
-      } else return true
-    }
-  }
-
-
-  //
-
-  function isSameLanguage(list) {
-    let arrayLanguage = []
-    list.forEach(participant =>{
-      console.log(participant.language)
-      arrayLanguage.push(participant.language)
-    })
-    console.log(arrayLanguage)
-    for(let i=0; i<arrayLanguage.length -1; i++){
-      if(arrayLanguage[i] == undefined || arrayLanguage[i] !== arrayLanguage[i+1]){
-        return false 
-      } else return true
-    }
-  }
+  console.log(list[0])
+  const initialValue = list[0].language;
+  const filteredList = list.filter((candidate) => candidate.language !== initialValue);
+  console.log(filteredList)
+  return !(filteredList.length > 0);
+}
