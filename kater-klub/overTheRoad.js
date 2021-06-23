@@ -33,6 +33,25 @@ let overTheRoad = (h, n) => {
 }
 
 
+//Solution Simon G 
+function overTheRoad(address, n){
+  const houses = n*2
+  if (address < n) {
+    return (houses - address)+1
+  }
+  if (address >= n) {
+    return (houses - address)+1
+  }
+}
+
+// Solution Simon G 2
+
+function overTheRoad(address, n){
+  const houses = n*2
+    return (houses - address)+1
+}
+
+
 
 
 
