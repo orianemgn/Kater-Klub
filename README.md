@@ -1,4 +1,4 @@
-# Morning-Kata ☕ :computer:
+# KATER-KLUB ☕ :computer:
 After the bootcamp we decided with several junior web developers to create a morning kata club. 
 The goal is to get together, work on the same kata and then explain the solutions we have found. 
 
